@@ -1,0 +1,17 @@
+<ion-header color="dark" [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Wishes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+
+  <ion-list color="dark" *ngIf="lists.length > 0">
+    <ion-item color="dark" *ngFor="let list of lists" detail>
+      <ion-label>{{list.title}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
